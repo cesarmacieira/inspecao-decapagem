@@ -131,7 +131,7 @@ aba_analise, aba_info, aba_exemplos = st.tabs(['Análise', 'Sobre o Modelo', 'Ex
 # ── Aba Análise ───────────────────────────────────────────────────────────────
 with aba_analise:
     if modelo is None:
-        st.error("Modelo não encontrado. Verifique se existe um arquivo best.pt dentro de runs/detect.")
+        st.error("Modelo não encontrado. Verifique se existe um arquivo best.pt dentro de models.")
         st.stop()
 
     st.markdown('<div class="section-title">Parâmetros de confiança</div>', unsafe_allow_html=True)
@@ -155,7 +155,7 @@ with aba_analise:
         if arquivo is not None:
             imagem = Image.open(arquivo).convert("RGB")
             st.markdown('<div class="section-title">Pré-visualização</div>', unsafe_allow_html=True)
-            st.image(imagem, use_container_width=True)
+            st.image(imagem, use_container_width=False, width=350)
 
     # Reset ao trocar arquivo
     if arquivo is None:
@@ -214,7 +214,7 @@ with aba_analise:
         col_imagem, col_resultado = st.columns([1.05, 1], gap='large')
         with col_imagem:
             st.markdown('<div class="section-title">Imagem com marcações</div>', unsafe_allow_html=True)
-            st.image(st.session_state.dados_resultado["imagem_marcada"], use_container_width=True)
+            st.image(st.session_state.dados_resultado["imagem_marcada"], use_container_width=False, width=350)
         with col_resultado:
             deteccoes = st.session_state.dados_resultado["deteccoes"]
             st.markdown('<div class="section-title">Resultado</div>', unsafe_allow_html=True)
