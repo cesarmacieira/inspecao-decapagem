@@ -17,6 +17,8 @@ runs/
 
 # pesos/modelos
 *.pt
+!models/
+!models/best.pt
 *.pth
 
 # outputs gerados
