@@ -1,0 +1,35 @@
+weldqualityinspectionv9/
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Streamlit secrets
+.streamlit/secrets.toml
+
+# artefatos de treino
+runs/
+
+# pesos/modelos
+*.pt
+*.pth
+
+# outputs gerados
+smartweld_output/*.png
+smartweld_output/*.jpg
+smartweld_output/*.jpeg
+
+# manter configs leves
+!smartweld_output/data_yolo.yaml
+!smartweld_output/smartweld_classes.json
+
+# editor / SO
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

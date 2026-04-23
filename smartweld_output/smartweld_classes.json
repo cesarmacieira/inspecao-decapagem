@@ -1,0 +1,23 @@
+{
+  "class_names": [
+    "adj",
+    "int",
+    "geo",
+    "pro",
+    "non"
+  ],
+  "class_pt": {
+    "adj": "adj",
+    "int": "int",
+    "geo": "geo",
+    "pro": "pro",
+    "non": "non"
+  },
+  "class_desc": {
+    "adj": "",
+    "int": "",
+    "geo": "",
+    "pro": "",
+    "non": ""
+  }
+}
